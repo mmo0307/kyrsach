@@ -1,0 +1,325 @@
+/**/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+body, html{
+	width:100%;
+	height: 100%;
+	font-family: 'Poppins', sans-serif;
+}
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+h1,h2,h3,h4,h5,h6{
+	font-family: "Poppins" !important;
+}
+
+.navbar-brand img{
+	width:150px;
+}
+
+.alert hr{
+	border-top: 2px solid silver;
+	margin-top: 0.3em;
+	margin-bottom: 1em;
+}
+
+.g1{
+	background: #000;
+	margin:50px;
+	padding:50px;
+}
+
+.text_service{
+	color: white;
+}
+
+.f1{
+	margin:50px;
+	padding:50px;
+}
+
+.video_media{
+	heigth: 80px;
+}
+
+.crossfit{
+		display:inline-block;
+	border:	solid;
+	color: white;
+	width: 126px;
+	border-radius: 25px;
+	margin: 10px;
+	padding: 10px;
+}
+
+.gym{
+		display:inline-block;
+	border:	solid;
+	color: white;
+	width: 126px;
+	border-radius: 25px;
+	margin: 10px;
+	padding: 10px;
+}
+
+.swim{
+		display:inline-block;
+	border:	solid;
+	color: white;
+	width: 126px;
+	border-radius: 25px;
+	margin: 10px;
+	padding: 10px;
+}
+
+.massage{
+		display:inline-block;
+	border:	solid;
+	color: white;
+	width: 136px;
+	border-radius: 25px;
+	margin: 10px;
+	padding: 10px;
+}
+
+.coach{
+	display:inline-block;
+	border:	solid;
+	color: white;
+	max-width: 136px !important;
+	border-radius: 25px;
+	margin: 10px;
+	padding: 10px;
+}
+
+.video{
+position: relation;
+top: 0;
+left: 0;
+min-width: 100%;
+min-height: 100%;
+}
+
+.video:after{
+	content:"";
+	display:block;
+	width: 100%;
+	height: 114.2%;
+
+	background-color: rgba(0, 0, 0, 0.5);
+
+	position:  absolute;
+	top:0;
+	left: 0;
+	z-index:2;
+}
+
+.content{
+	width:100%;
+  height:100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: colum;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  z-index: 3;
+}
+
+.btn{
+	display:block;
+}
+
+.texta{
+	text-align: center !important;
+	display:inline-block;
+}
+
+.btn1{
+	padding:30px 90px !important;
+}
+
+.hr-line{
+	border: none; /* Убираем границу для браузера Firefox */
+  color: white; /* Цвет линии для остальных браузеров */
+  background-color: white; /* Цвет линии для браузера Firefox и Opera */
+  height: 2.3px; /* Толщина линии */
+}
+
+#bn {
+  background-color: #333;
+  position: fixed;
+  width: 100%;
+  display:block;
+  transition: top 0.7s;
+}
+
+#bn button {
+  float: left;
+  display: block;
+  text-align: center;
+  padding: 15px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+#bn button:hover {
+  background-color: black;
+  color: white;
+}
+
+.prices{
+	background: #999999;
+}
+
+
+/* Bootstrap 4 breakpoints & gutter */
+$grid-breakpoints: (
+    xs: 0,
+    sm: 576px,
+    md: 768px,
+    lg: 992px,
+    xl: 1200px
+) !default;
+
+$grid-gutter-width: 30px !default;
+
+/* number of cards per line for each breakpoint*/
+$cards-per-line: (
+    xs: 1,
+    sm: 2,
+    md: 3,
+    lg: 3,
+    xl: 3
+);
+
+@each $name, $breakpoint in $grid-breakpoints {
+	@media (min-width: $breakpoint) {
+		.card-deck .card {
+			flex: 0 0 calc(#{100/map-get($cards-per-line, $name)}% - #{$grid-gutter-width});
+		}
+	}
+}
+
+/*
+.bg-c{
+	background: url("img/workout-fitness-weightlifting.jpg");
+}
+*/
+
+
+
+.r1 h1 {
+ text-transform: uppercase;
+ text-align: center;
+ font-weight: bold;
+ font-style: italic;
+ font-size: 100px;
+}
+
+
+h1.red {
+ color: #ffffff;
+ text-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff, 0 0 20px #ffffff, 0 0 40px #ff0000, 0 0 80px #ff0000, 0 0 90px #ff0000, 0 0 100px #ff0000, 0 0 150px #ff0000;
+}
+
+.g1 h1 {
+ text-transform: uppercase;
+ text-align: center;
+ font-weight: bold;
+ font-style: italic;
+ font-size: 100px;
+}
+
+h1.green {
+ color: #ffffff;
+ text-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff, 0 0 20px #ffffff, 0 0 40px #00ff00, 0 0 80px #00ff00, 0 0 90px #00ff00, 0 0 100px #00ff00, 0 0 150px #00ff00;
+}
+
+.f1 h1 {
+ text-transform: uppercase;
+ text-align: center;
+ font-weight: bold;
+ font-style: italic;
+ font-size: 100px;
+}
+
+h1.yellow {
+ color: #ffffff;
+ text-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff, 0 0 20px #ffffff, 0 0 40px #ffff00, 0 0 80px #ffff00, 0 0 90px #ffff00, 0 0 100px #ffff00, 0 0 150px #ffff00;
+}
+
+.t1 h1 {
+ text-transform: uppercase;
+ text-align: center;
+ font-weight: bold;
+ font-style: italic;
+ font-size: 100px;
+}
+
+h1.teal {
+ color: #ffffff;
+ text-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff, 0 0 20px #ffffff, 0 0 40px #008080, 0 0 80px #008080, 0 0 90px #008080, 0 0 100px #008080, 0 0 150px #008080;
+}
+
+.map-container{
+overflow:hidden;
+position:relative;
+height:0;
+}
+
+.map-container iframe{
+left:0;
+top:0;
+width:100%;
+height:40% !important;
+position:absolute;
+}
+
+.lime1 h1 {
+ text-transform: uppercase;
+ text-align: center;
+ font-weight: bold;
+ font-style: italic;
+ font-size: 100px;
+}
+
+h1.lime {
+ color: #ffffff;
+ text-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff, 0 0 20px #ffffff, 0 0 40px #00FF00, 0 0 80px #00FF00, 0 0 90px #00FF00, 0 0 100px #00FF00, 0 0 150px #00FF00;
+}
+
+
+/* Add a black background color to the top navigation */
+.topnav {
+    background-color: #333;
+    overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+    background-color: #4CAF50;
+    color: white;
+}
